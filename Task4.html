@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 - Web Layouts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: serif;
+            background-color: #f0f0f0;
+        }
+
+        .page-break {
+            border: 2px solid black;
+            margin: 50px 0;
+        }
+
+        .t1-container {
+            background-color: #df9e45;
+            min-height: 500px;
+        }
+
+        .t1-banner {
+            background-color: #8b4513;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .t1-banner h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .t1-nav {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .t1-nav span {
+            color: green;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+
+        .t1-content {
+            padding: 20px 40px;
+        }
+
+        .t1-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .t1-content p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .t2-bg {
+            background-color: #a0c4ff;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t2-card {
+            background-color: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .t2-card h1 {
+            color: #3d5a80;
+            margin-bottom: 5px;
+        }
+
+        .t2-subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .t2-input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .t2-label {
+            display: block;
+            color: #888;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .t2-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d1d9e6;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .t2-btn {
+            background-color: #4dabf7;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .t3-bg {
+            background-color: white;
+            padding: 60px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t3-card {
+            background-color: #2ab7f7;
+            width: 500px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            font-family: sans-serif;
+        }
+
+        .t3-card h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .t3-input-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .t3-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            width: 16px;
+        }
+
+        .t3-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .t3-textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        .t3-btn {
+            background-color: #1c3d82;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="t1-container">
+        <div class="t1-banner">
+            <h1>THIS IS MY BANNER TEXT</h1>
+        </div>
+
+        <div class="t1-nav">
+            <span>HOME</span>
+            <span>INFO</span>
+            <span>CONTACT</span>
+            <span>HUBPAGES</span>
+        </div>
+
+        <div class="t1-content">
+            <h2>This Is My Paragraph Header</h2>
+            <p>This is where I am going to put useful and informative text about my website.</p>
+            <p>This is where I am can place even more information about my website.</p>
+            <p>This is where I can place a copyright logo like this &copy;</p>
+        </div>
+    </div>
+
+    <hr class="page-break">
+
+    <div class="t2-bg">
+        <div class="t2-card">
+            <h1>CODEWITHRANDOM</h1>
+            <p class="t2-subtitle">Thank you for Being with me</p>
+
+            <div class="t2-input-group">
+                <label class="t2-label">Name</label>
+                <input type="text" class="t2-input">
+            </div>
+
+            <div class="t2-input-group">
+                <label class="t2-label">E-mail</label>
+                <input type="text" class="t2-input">
+            </div>
+
+            <div class="t2-input-group">
+                <label class="t2-label">Password</label>
+                <input type="password" class="t2-input">
+            </div>
+
+            <div class="t2-input-group">
+                <label class="t2-label">Repeat password</label>
+                <input type="password" class="t2-input">
+            </div>
+
+            <button class="t2-btn">Register</button>
+        </div>
+    </div>
+
+    <hr class="page-break">
+
+    <div class="t3-bg">
+        <div class="t3-card">
+            <h2>Contact Us</h2>
+
+            <div class="t3-input-wrapper">
+                <input type="text" class="t3-input" placeholder="Full Name">
+            </div>
+
+            <div class="t3-input-wrapper">
+                <input type="text" class="t3-input" placeholder="Email">
+            </div>
+
+            <div class="t3-input-wrapper">
+                <input type="text" class="t3-input" placeholder="tel: XXX XXX XXXX">
+            </div>
+
+            <textarea class="t3-textarea" placeholder="Your Message Here..."></textarea>
+
+            <button class="t3-btn">Send</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
