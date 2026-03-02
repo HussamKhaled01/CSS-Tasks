@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3 - Login and Sign Up</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .divider {
+            width: 90%;
+            border: 1px solid #000;
+            margin: 60px 0;
+        }
+
+        .t1-container {
+            background-color: #dee2ff;
+            width: 100%;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t1-card {
+            background-color: #8e8cd8;
+            width: 420px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+        }
+
+        .t1-card h1 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        .t1-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .t1-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .t1-full-width {
+            margin-bottom: 15px;
+        }
+
+        .t1-checkbox-row {
+            font-size: 14px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .t1-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #a4a198; 
+            color: #6d6b63;
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .t1-login-link {
+            font-size: 14px;
+        }
+
+        .t1-login-link span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .t1-copyright {
+            margin-top: 25px;
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .t2-container {
+            background-color: #a900cc;
+            width: 100%;
+            padding: 80px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t2-card {
+            background-color: white;
+            width: 850px;
+            display: flex;
+            padding: 60px;
+            border-radius: 40px;
+            align-items: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .t2-left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .t2-image-circle {
+            background-color: #f7f7f7;
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .t2-illustration {
+            width: 220px;
+            height: auto;
+        }
+
+        .t2-right {
+            flex: 1;
+            padding-left: 40px;
+            text-align: center;
+        }
+
+        .t2-right h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .t2-input-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .t2-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            width: 18px;
+            height: 18px;
+        }
+
+        .t2-input {
+            width: 100%;
+            padding: 15px 15px 15px 50px; 
+            background-color: #ebebeb;
+            border: none;
+            border-radius: 30px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .t2-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #2ee045; 
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .t2-forgot {
+            font-size: 13px;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .t2-forgot span {
+            color: #2ee045;
+            font-weight: bold;
+        }
+
+        .t2-create {
+            margin-top: 50px;
+            color: #2ee045;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="t1-container">
+        <div class="t1-card">
+            <h1>Sign Up</h1>
+            
+            <div class="t1-row">
+                <input type="text" class="t1-input" placeholder="First Name">
+                <input type="text" class="t1-input" placeholder="Last Name">
+            </div>
+            
+            <div class="t1-full-width">
+                <input type="text" class="t1-input" placeholder="Email">
+            </div>
+            
+            <div class="t1-full-width">
+                <input type="password" class="t1-input" placeholder="Password">
+            </div>
+            
+            <div class="t1-full-width">
+                <input type="password" class="t1-input" placeholder="Confirm Password">
+            </div>
+            
+            <div class="t1-checkbox-row">
+                <input type="checkbox"> I accept the Terms of Use & Privacy Policy
+            </div>
+            
+            <button class="t1-btn">Sign Up</button>
+            
+            <div class="t1-login-link">
+                Already have an account? <span>Login here</span>
+            </div>
+            
+            <div class="t1-copyright">
+                Copyright © Hussam Khaled
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="t2-container">
+        <div class="t2-card">
+            
+            <div class="t2-left">
+                <div class="t2-image-circle">
+                    <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcC1wZi1qai0wMTMwOC1hLnBuZw.png" alt="Illustration" class="t2-illustration">
+                </div>
+            </div>
+
+            <div class="t2-right">
+                <h2>Member Login</h2>
+                
+                <div class="t2-input-group">
+                    <img src="https://cdn-icons-png.flaticon.com/512/542/542689.png" alt="Email" class="t2-icon">
+                    <input type="text" class="t2-input" placeholder="Email">
+                </div>
+                
+                <div class="t2-input-group">
+                    <img src="https://cdn-icons-png.flaticon.com/512/115/115681.png" alt="Lock" class="t2-icon">
+                    <input type="password" class="t2-input" placeholder="******">
+                </div>
+                
+                <button class="t2-btn">LOGIN</button>
+                
+                <div class="t2-forgot">
+                    Forgot <span>Username / Password ?</span>
+                </div>
+                
+                <div class="t2-create">
+                    Create your account &rarr;
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
