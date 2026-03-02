@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .exercise-container {
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        hr {
+            border: 2px solid black;
+            margin: 40px 0;
+        }
+
+        /* --- TEMPLATE 1 FIXED --- */
+        .t1-body {
+            background-color: #ff66ff;
+            padding: 20px;
+            /* overflow: hidden; removed as requested */
+        }
+
+        .t1-article {
+            background-color: #eee;
+            padding: 10px;
+            width: 30%;
+            float: left;
+            margin-right: 2%;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        /* This is the fix for the broken background */
+        .clearfix {
+            clear: both;
+        }
+
+        .t1-banner {
+            clear: both;
+            background-color: #ff66ff;
+            border: 3px solid black;
+            padding: 10px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .t1-small-article {
+            background-color: #eee;
+            padding: 10px;
+            width: 25%;
+            float: left;
+            margin-right: 2%;
+            margin-bottom: 20px;
+        }
+
+        /* --- TEMPLATES 2 & 3 REMAIN THE SAME --- */
+        .t2-body {
+            background-color: #ffffcc;
+            padding: 40px;
+        }
+
+        .t2-box {
+            background-color: white;
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+        }
+
+        .t2-box-dotted {
+            border: 2px dotted red;
+            color: red;
+        }
+
+        .highlight {
+            background-color: #ffcc99;
+            padding: 0 3px;
+        }
+
+        .highlight-yellow {
+            background-color: yellow;
+            padding: 0 3px;
+        }
+
+        .t3-content {
+            width: 70%;
+            line-height: 1.6;
+        }
+
+        .t3-fixed-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            border: 1px solid black;
+            background: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .t3-img-placeholder {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="exercise-container">
+        <div class="t1-body">
+            <h1>Floating Articles</h1>
+
+            <div class="t1-article">Building a strong foundation in CSS requires patience and practice. Understanding
+                how elements move on a page is the first step toward becoming a great developer.</div>
+            <div class="t1-article">Design is more than just colors; it's about how the user feels when they interact
+                with your site. Always prioritize clarity and ease of use.</div>
+            <div class="t1-article">The web is constantly changing. Staying curious and learning new techniques daily
+                will help you keep your skills sharp and relevant.</div>
+
+            <div class="clearfix"></div>
+
+            <div class="t1-banner">
+                Expert Tip: Always keep your code organized. Clear structures make it easier for you and your team to
+                update and fix things in the future.
+            </div>
+
+            <div class="t1-small-article">Creativity is intelligence having fun on the web.</div>
+            <div class="t1-small-article">Small details make a huge difference in the final look.</div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <div class="t2-body">
+            <h1>CSS Articles - Learning Style Sheets</h1>
+            <div class="t2-box">
+                <h2>The Art of Layout</h2>
+                <p>When you <span class="highlight">master</span> CSS, you gain full control over the browser.</p>
+            </div>
+            <div class="t2-box t2-box-dotted">
+                <h2 style="color: red;">Code Quality Matters</h2>
+                <p>Always aim for <span class="highlight-yellow">excellence</span> in your work.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="exercise-container">
+        <h1>Fixed Image Page</h1>
+        <div class="t3-content">
+            <p>Consistency is key in web development. If you choose a specific color for your headers, use it throughout
+                the entire project. This builds trust with your users because they know what to expect. The same applies
+                to spacing and font sizes. When elements are predictable, the brain doesn't have to work as hard to
+                process the information.</p>
+        </div>
+
+        <div class="t3-fixed-box">
+            <img src="https://www.nicepng.com/png/detail/160-1608012_mascot-animate-cartoon-character-vector-png.png"
+                alt="Digital Mascot" class="t3-img-placeholder">
+        </div>
+    </div>
+
+</body>
+
+</html>
