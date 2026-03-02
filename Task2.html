@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f3f2ef;
+            padding-bottom: 50px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .section-white {
+            background-color: white;
+            padding: 0 0 40px 0;
+        }
+
+        hr {
+            width: 80%;
+            border: 1px solid #333;
+            margin: 20px auto;
+        }
+
+        .card-1 {
+            background: white;
+            width: 400px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .t1-logo {
+            color: #0a66c2;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .t1-logo-box {
+            background: #0a66c2;
+            color: white;
+            padding: 0 2px;
+            border-radius: 2px;
+        }
+
+        .t1-title { margin: 0; }
+        .t1-subtitle { color: #666; }
+        .t1-forgot { color: #0a66c2; font-weight: bold; }
+
+        .t1-input {
+            width: 93%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+
+        .t1-btn-blue {
+            width: 100%;
+            padding: 14px;
+            background: #0a66c2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .t1-divider-text {
+            color: gray;
+            margin: 15px 0;
+        }
+
+        .t1-btn-white {
+            width: 100%;
+            padding: 12px;
+            background: white;
+            border: 1px solid black;
+            border-radius: 25px;
+            margin-top: 15px;
+        }
+
+        .nav-2 {
+            background: #f8f9fa;
+            width: 100%;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .t2-signup-text { color: gray; }
+        .t2-login-text { color: black; margin-left: 10px; }
+
+        .form-2 {
+            width: 300px;
+            margin-top: 30px;
+        }
+
+        .t2-input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+
+        .t2-btn {
+            width: 100%;
+            background: #63b3ed;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .bg-3 {
+            background: linear-gradient(to bottom, #72efdd, #48bfe3);
+            padding: 50px;
+            width: 400px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .t3-header { color: white; margin-bottom: 20px; }
+
+        .card-3 {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .t3-input {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .t3-checkbox-area {
+            text-align: left;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .t3-btn {
+            background: #00897b;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 4px;
+        }
+
+        .t3-footer { font-size: 12px; margin-top: 15px; }
+        .t3-teal-link { color: teal; }
+
+        .bg-4 {
+            background-color: #1abc9c;
+            padding: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        .card-4 {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .t4-title { margin-top: 0; }
+
+        .t4-label {
+            text-align: left;
+            color: #1abc9c;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .t4-input {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #1abc9c;
+            padding: 10px 0;
+            margin-bottom: 25px;
+            outline: none;
+        }
+
+        .t4-btn {
+            background: #1abc9c;
+            color: white;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            font-weight: bold;
+        }
+
+        .t4-footer { font-size: 12px; margin-top: 15px; color: gray; }
+    </style>
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="card-1">
+            <div class="t1-logo">Linked<span class="t1-logo-box">in</span></div>
+
+            <h1 class="t1-title">Sign in</h1>
+
+            <p class="t1-subtitle">Stay updated on your professional world</p>
+            <input type="text" class="t1-input" placeholder="Email or Phone">
+            <input type="password" class="t1-input" placeholder="Password">
+
+            <p class="t1-forgot">Forgot password?</p>
+
+            <button class="t1-btn-blue">Sign in</button>
+
+            <p class="t1-divider-text">_____________________ or _____________________</p>
+
+            <button class="t1-btn-white">Sign in with Apple</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section section-white">
+        <div class="nav-2">
+            <strong>Scratch</strong>
+            <span class="t2-signup-text">Signup <span class="t2-login-text">Login</span></span>
+        </div>
+        <div class="form-2">
+            <label>Email</label>
+            <input type="text" class="t2-input">
+            <label>Password</label>
+            <input type="password" class="t2-input">
+            <button class="t2-btn">Login</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <div class="bg-3">
+            <h1 class="t3-header">Login</h1>
+            <div class="card-3">
+                <input type="text" placeholder="Email" class="t3-input">
+                <input type="password" placeholder="Password" class="t3-input">
+                <div class="t3-checkbox-area">
+                    <input type="checkbox"> Show Password
+                </div>
+                <button class="t3-btn">SIGN IN</button>
+                <p class="t3-footer">Forgot <span class="t3-teal-link">Username / Password?</span></p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="bg-4">
+        <div class="card-4">
+            <h2 class="t4-title">USER LOGIN</h2>
+            <div class="t4-label">Username</div>
+            <input type="text" class="t4-input" value="admin">
+            <div class="t4-label">Password</div>
+            <input type="password" class="t4-input" value="password">
+            <button class="t4-btn">LOGIN</button>
+            <p class="t4-footer">Forgot Password?</p>
+        </div>
+    </div>
+
+</body>
+</html>
