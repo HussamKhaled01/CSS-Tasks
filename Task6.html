@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 20px; }
+        .exercise-wrapper { margin-bottom: 80px; border: 1px solid #ccc; padding: 10px; }
+        h1 { font-size: 18px; color: #555; }
+
+        /* --- 1. Split Screen (Flexbox) --- */
+        .t1-container {
+            display: flex;
+            height: 400px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        .t1-left { background-color: orange; flex: 1; display: flex; justify-content: center; align-items: center; }
+        .t1-right { background-color: blue; flex: 1; display: flex; justify-content: center; align-items: center; }
+
+        /* --- 2. Image Gallery (Flexbox Wrap) --- */
+        .t2-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .t2-gallery img {
+            width: 30%; /* Three images per row */
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        /* --- 3. Numbered Grid (Flexbox Wrap) --- */
+        .t3-grid {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #d4af37; /* Gold border */
+            padding: 10px;
+        }
+        .t3-box {
+            width: 25%; /* Four boxes per row */
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            color: white;
+        }
+        /* Specific colors from your image */
+        .c1 { background-color: #1abc9c; } .c2 { background-color: #3498db; }
+        .c3 { background-color: #9b59b6; } .c4 { background-color: #34495e; }
+        .c5 { background-color: #f1c40f; } .c6 { background-color: #e67e22; }
+        .c7 { background-color: #e74c3c; } .c8 { background-color: #bdc3c7; }
+        .c9 { background-color: #2ecc71; } .c10 { background-color: #16a085; }
+
+        /* --- 4. Dashboard Layout (CSS Grid) --- */
+        .t4-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* Left side bigger than right */
+            grid-template-rows: 80px 300px 100px; /* Header, Body, Footer heights */
+            gap: 15px;
+        }
+        .t4-header { grid-column: span 2; background-color: black; }
+        .t4-main { background-color: orange; }
+        .t4-side { background-color: green; }
+        .t4-footer { grid-column: span 2; background-color: blue; }
+
+        /* --- 5. Vertical Stripes (Flexbox) --- */
+        .t5-stripes {
+            display: flex;
+            height: 400px;
+            background-color: #d4af37;
+            padding: 10px;
+        }
+        .t5-bar {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 80px;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="exercise-wrapper">
+        <h1>Exercise #3 - Split</h1>
+        <div class="t1-container">
+            <div class="t1-left">First Part</div>
+            <div class="t1-right">Second Part</div>
+        </div>
+    </div>
+
+    <div class="exercise-wrapper">
+        <h1>Exercise #3 - Gallery</h1>
+        <div class="t2-gallery">
+            <img src="img1.jpg" alt="Nature"> <img src="img2.jpg" alt="Lake"> <img src="img3.jpg" alt="Forest">
+            <img src="img4.jpg" alt="City"> <img src="img5.jpg" alt="Flowers"> <img src="img6.jpg" alt="Piano">
+            <img src="img7.jpg" alt="Violin"> <img src="img8.jpg" alt="Guitar">
+        </div>
+    </div>
+
+    <div class="exercise-wrapper">
+        <h1>Exercise #2 - Colored Grid</h1>
+        <div class="t3-grid">
+            <div class="t3-box c1">1</div> <div class="t3-box c2">2</div>
+            <div class="t3-box c3">3</div> <div class="t3-box c4">4</div>
+            <div class="t3-box c5">5</div> <div class="t3-box c6">6</div>
+            <div class="t3-box c7">7</div> <div class="t3-box c8">8</div>
+            <div class="t3-box c9">9</div> <div class="t3-box c10">10</div>
+        </div>
+    </div>
+
+    <div class="exercise-wrapper">
+        <h1>Exercise #1 - Grid Layout</h1>
+        <div class="t4-grid">
+            <div class="t4-header"></div>
+            <div class="t4-main"></div>
+            <div class="t4-side"></div>
+            <div class="t4-footer"></div>
+        </div>
+    </div>
+
+    <div class="exercise-wrapper">
+        <h1>Exercise #1 - Stripes</h1>
+        <div class="t5-stripes">
+            <div class="t5-bar" style="background-color: green;">1</div>
+            <div class="t5-bar" style="background-color: yellow; color: white;">2</div>
+            <div class="t5-bar" style="background-color: purple;">3</div>
+            <div class="t5-bar" style="background-color: gray;">4</div>
+            <div class="t5-bar" style="background-color: blue;">5</div>
+            <div class="t5-bar" style="background-color: orange;">6</div>
+            <div class="t5-bar" style="background-color: pink;">7</div>
+            <div class="t5-bar" style="background-color: red;">8</div>
+            <div class="t5-bar" style="background-color: brown;">9</div>
+        </div>
+    </div>
+
+</body>
+</html>
