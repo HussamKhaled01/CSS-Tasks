@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <style>
+        body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.divider {
+    width: 400px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+table {
+    border: 1px solid black;
+    width: 400px;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #777;
+    padding: 4px 8px;
+}
+
+.header-row th {
+    background-color: yellow;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.col-name { width: 40%; }
+.col-age { width: 25%; }
+.col-grade { width: 35%; }
+
+.highlight-pink {
+    background-color: pink;
+    text-align: center;
+}
+
+.footer-cell {
+    text-align: center;
+    padding: 8px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h2 class="title">Ninja Details</h2>
+    <hr class="divider">
+
+    <table border="1" cellspacing="3" cellpadding="5">
+        <thead>
+            <tr class="header-row">
+                <th class="col-name">Name</th>
+                <th class="col-age">Age</th>
+                <th class="col-grade">Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="highlight-pink">Ninja A</td>
+                <td>18</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Ninja B</td>
+                <td>23</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>Ninja C</td>
+                <td>22</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="footer-cell">
+                    <strong>Ninja C - the best learner!</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
